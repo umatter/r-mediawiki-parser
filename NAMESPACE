@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+
+export(convert_wikitext)
+export(convert_wikitext_to_html)
+export(convert_wikitext_with_metadata)
