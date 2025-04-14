@@ -1,0 +1,33 @@
+{
+    "name": "mediawiki/standalone-parser",
+    "description": "Standalone version of the MediaWiki parser",
+    "type": "library",
+    "require": {
+        "php": ">=7.4.0",
+        "wikimedia/parsoid": "^0.16.0",
+        "wikimedia/remex-html": "^3.0",
+        "wikimedia/utfnormal": "^3.0",
+        "wikimedia/wrappedstring": "^3.2",
+        "wikimedia/preprocessor": "^0.1.1",
+        "psr/log": "^1.1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MediaWiki\\": "lib/includes/",
+            "MediaWiki\\StandaloneParser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MediaWiki\\StandaloneParser\\Tests\\": "tests/php/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit tests/php",
+        "test-coverage": "phpunit tests/php --coverage-html coverage"
+    },
+    "license": "GPL-2.0-or-later"
+}

@@ -1,0 +1,21 @@
+Package: rmediawiki
+Title: R Interface to MediaWiki Parser
+Version: 0.1.0
+Authors@R: 
+    person("Your", "Name", , "your.email@example.com", role = c("aut", "cre"))
+Description: Provides direct access to MediaWiki's parser functionality from R,
+    allowing conversion of wikitext to HTML without running a MediaWiki server.
+    Includes support for all MediaWiki markup features, bulk processing, and
+    metadata extraction.
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    jsonlite
+SystemRequirements: 
+    PHP (>= 7.4.0),
+    composer
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

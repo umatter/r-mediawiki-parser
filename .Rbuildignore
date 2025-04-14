@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git$
+^\.github$
+^\.gitignore$
+^composer\.json$
+^composer\.lock$
+^vendor/
+^docs/examples/
+^README\.md$
